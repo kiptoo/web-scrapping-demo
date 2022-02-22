@@ -1,0 +1,48 @@
+{
+  "name": "scrapper",
+  "version": "0.0.0",
+  "description": "This application uses [website-scraper](https://github.com/website-scraper/node-website-scraper) module for scraping",
+  "main": "app/index.js",
+  "module": "app/main.js",
+  "type": "module",
+  "scripts": {
+    "postinstall": "bower install && gulp build",
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "app-controller": "^0.5.1",
+    "archiver": "^1.2.0",
+    "bluebird": "^3.4.6",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.6",
+    "esm": "^3.2.25",
+    "express": "~4.16.1",
+    "gulp": "^4.0.2",
+    "http-errors": "~1.6.3",
+    "lodash": "^4.17.2",
+    "morgan": "~1.9.1",
+    "pmx": "^0.6.8",
+    "pug": "2.0.0-beta11",
+    "string-template": "^1.0.0",
+    "website-scraper": "^5.0.0",
+    "website-scraper-puppeteer": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/register": "^7.17.0",
+    "babel": "^6.23.0",
+    "babel-core": "^6.14.0",
+    "babel-register": "^6.14.0",
+    "bower": "^1.8.13",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-concat": "^2.5.2",
+    "gulp-uglify": "^1.1.0",
+    "run-sequence": "^1.0.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

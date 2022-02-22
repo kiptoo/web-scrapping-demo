@@ -1,0 +1,12 @@
+// require("pmx").init();
+// import pmx from "pmx";
+import express from "express";
+import addMiddlewares from "./app/middlewares.js";
+import addRoutes from "./app/routes.js";
+import config from "./config/app.js";
+// pmx.init();
+var app = express();
+addMiddlewares(app);
+addRoutes(app);
+console.log(config.port);
+app.listen(config.port);
